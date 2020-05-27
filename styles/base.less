@@ -1,0 +1,77 @@
+@import "syntax-variables";
+
+atom-text-editor {
+	color: @syntax-text-color;
+	background-color: @syntax-background-color;
+	
+	.selection.region {
+		background-color: desaturate(@syntax-selection-color, 35%);
+	}
+	.bracket-matcher .region {
+		border-bottom: 1px solid @dark-blue;
+	}
+	
+	.wrap-guide {
+		color: @syntax-wrap-guide-color;
+	}
+	.indent-guide {
+		color: @syntax-indent-guide-color;
+	}
+	.invisible-character {
+		color: @syntax-invisible-character-color;
+	}
+	
+	.gutter {
+		color: @syntax-gutter-text-color;
+		background-color: @syntax-gutter-background-color;
+		
+		.line-number.cursor-line {
+			color: @syntax-gutter-text-color-selected;
+			background-color: @syntax-gutter-background-color-selected;
+		}
+	}
+}
+atom-text-editor.is-focused {
+	.selection.region {
+		background-color: @syntax-selection-color
+	}
+}
+
+.syntax--directive {
+	color: @very-dark-blue;
+}
+
+.syntax--keyword {
+	color: @dark-blue;
+}
+.syntax--modifier {
+	color: @dark-blue;
+}
+.syntax--operator {
+	color: @dark-blue;
+}
+.syntax--constant {
+	color: @dark-blue;
+}
+
+.syntax--type {
+	color: @blue;
+}
+.syntax--variable {
+	color: @blue;
+}
+.syntax--function {
+	color: @blue;
+}
+
+.syntax--string {
+	color: @light-blue;
+}
+
+.syntax--comment {
+	color: @light-gray;
+	font-style: italic;
+}
+.syntax--link {
+	text-decoration: underline;
+}
