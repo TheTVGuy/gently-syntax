@@ -1,5 +1,6 @@
 @import "syntax-variables";
 
+// Editor
 atom-text-editor {
 	color: @syntax-text-color;
 	background-color: @syntax-background-color;
@@ -37,6 +38,7 @@ atom-text-editor.is-focused {
 	}
 }
 
+// Syntax
 .syntax--directive {
 	color: @syntax-color-import;
 }
@@ -74,4 +76,58 @@ atom-text-editor.is-focused {
 }
 .syntax--link {
 	text-decoration: underline;
+}
+
+// Terminal (atom-terminal-tab)
+.terminal-view-color-elements {
+	
+	[data-color-key="black"] {
+		color: @black;
+	}
+	[data-color-key="white"] {
+		color: @white;
+	}
+	[data-color-key="red"] {
+		color: @red;
+	}
+	[data-color-key="green"] {
+		color: @light-blue;
+	}
+	[data-color-key="yellow"] {
+		color: @yellow;
+	}
+	[data-color-key="blue"] {
+		color: @blue;
+	}
+	[data-color-key="magenta"] {
+		color: @magenta;
+	}
+	[data-color-key="cyan"] {
+		color: @blue-green;
+	}
+	
+	[data-color-key="brightBlack"] {
+		color: @black;
+	}
+	[data-color-key="brightWhite"] {
+		color: @white;
+	}
+	[data-color-key="brightRed"] {
+		color: @red;
+	}
+	[data-color-key="brightGreen"] {
+		color: @light-blue;
+	}
+	[data-color-key="brightYellow"] {
+		color: @yellow;
+	}
+	[data-color-key="brightBlue"] {
+		color: @blue;
+	}
+	[data-color-key="brightMagenta"] {
+		color: @magenta;
+	}
+	[data-color-key="brightCyan"] {
+		color: @blue-green;
+	}
 }
