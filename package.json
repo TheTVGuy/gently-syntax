@@ -1,7 +1,7 @@
 {
   "name": "gently-syntax",
   "theme": "syntax",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A snytax theme based on the KDE Plasma theme of the same name.",
   "keywords": [
     "syntax",
